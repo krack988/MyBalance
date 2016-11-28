@@ -19,12 +19,14 @@ public final class R {
         public static final int editDeb=0x7f060002;
         public static final int editKred=0x7f060003;
         public static final int list=0x7f060001;
+        public static final int myTextView=0x7f060006;
         public static final int textBalance=0x7f060000;
     }
     public static final class layout {
         public static final int activity_balance=0x7f030000;
         public static final int activity_main=0x7f030001;
         public static final int activity_status=0x7f030002;
+        public static final int my_item=0x7f030003;
     }
     public static final class string {
         public static final int app_name=0x7f040000;

@@ -39,7 +39,8 @@ public class MainActivity extends Activity {
 		
 		ContentValues content=new ContentValues();
 		String debet=textDeb.getText().toString();
-		String kredit=textKred.getText().toString();
+		int kr=Integer.parseInt(textKred.getText().toString())*-1;
+		String kredit=String.valueOf(kr);
 		
 		SQLiteDatabase db = dbHelper.getWritableDatabase();
 		
@@ -69,6 +70,7 @@ public class MainActivity extends Activity {
 				
 				
 				Intent intent=new Intent(this,BalanceActivity.class);
+				intent.putIntegerArrayListExtra("aList", aList);
 				startActivity(intent);
 				
 				break;
