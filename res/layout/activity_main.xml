@@ -1,0 +1,57 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Приход/Расход" 
+        android:textSize="30sp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"/>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Приход"
+        android:textSize="22sp"
+        android:layout_gravity="center"/>
+    <EditText 
+        android:id="@+id/editDeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+     <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Расход"
+        android:textSize="22sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"/>
+     <EditText 
+        android:id="@+id/editKred"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"/>
+     <Button 
+         android:id="@+id/btn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Click"
+         android:onClick="onClick"
+         android:layout_gravity="center"/>
+     <Button 
+         android:id="@+id/btnStat"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Статистика"
+         android:layout_gravity="center"
+         android:onClick="onClick"/>
+     
+     
+    
+
+</LinearLayout>
