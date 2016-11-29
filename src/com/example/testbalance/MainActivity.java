@@ -44,15 +44,18 @@ public class MainActivity extends Activity {
 		
 		SQLiteDatabase db = dbHelper.getWritableDatabase();
 		
+		
 		switch(v.getId()){
+		
 			case R.id.btn:
 				content.put("debet", debet);
 				content.put("kredit", kredit);
 				long rowId=db.insert("mytable", null, content);
 				Toast.makeText(this, String.valueOf(rowId), Toast.LENGTH_SHORT).show();
-				//
+		
 				break;
 			case R.id.btnStat:
+				
 				Cursor c=db.query("mytable", null, null, null, null, null, null);
 				
 				if(c.moveToFirst()){
@@ -67,13 +70,17 @@ public class MainActivity extends Activity {
 					Toast.makeText(this, "0 rows", Toast.LENGTH_SHORT).show();
 					c.close();
 				}
-				
-				
+								
 				Intent intent=new Intent(this,BalanceActivity.class);
 				intent.putIntegerArrayListExtra("aList", aList);
-				startActivity(intent);
+				startActivity(intent);				
 				
 				break;
+			case R.id.btnDelete:
+				int clearCount=db.delete("mytable", null, null);
+				Toast.makeText(this, "Удалено: "+clearCount+" записей", Toast.LENGTH_SHORT).show();
+				break;
 		}
+		
 	}
 }

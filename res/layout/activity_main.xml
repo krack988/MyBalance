@@ -23,6 +23,7 @@
         android:id="@+id/editDeb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="0"
         />
      <TextView 
         android:layout_width="wrap_content"
@@ -35,21 +36,27 @@
         android:id="@+id/editKred"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="30dp"
+        android:text="0"/>
      <Button 
          android:id="@+id/btn"
-         android:layout_width="wrap_content"
+         android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:text="Click"
-         android:onClick="onClick"
-         android:layout_gravity="center"/>
+         android:text="Записать"
+         android:onClick="onClick"/>
      <Button 
          android:id="@+id/btnStat"
-         android:layout_width="wrap_content"
+         android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:text="Статистика"
-         android:layout_gravity="center"
          android:onClick="onClick"/>
+     <Button 
+         android:id="@+id/btnDelete"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Удалить данные"
+         android:onClick="onClick"
+         />
      
      
     

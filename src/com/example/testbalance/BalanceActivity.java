@@ -46,5 +46,6 @@ public class BalanceActivity extends Activity {
 	protected void onStop(){
 		super.onStop();
 		listStat.clear();
+		
 	}
 }

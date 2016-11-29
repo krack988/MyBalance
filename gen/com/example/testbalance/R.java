@@ -15,11 +15,12 @@ public final class R {
     }
     public static final class id {
         public static final int btn=0x7f060004;
+        public static final int btnDelete=0x7f060006;
         public static final int btnStat=0x7f060005;
         public static final int editDeb=0x7f060002;
         public static final int editKred=0x7f060003;
         public static final int list=0x7f060001;
-        public static final int myTextView=0x7f060006;
+        public static final int myTextView=0x7f060007;
         public static final int textBalance=0x7f060000;
     }
     public static final class layout {
